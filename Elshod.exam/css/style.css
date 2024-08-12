@@ -1,0 +1,2371 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* FONTS */
+
+/* ROOT */
+:root {
+  /* colors */
+  --colorPrimary: #fff;
+  --colorSecondary: #fff;
+  /* backgrounds */
+  --backgroundPrimary: #fff;
+  --backgroundSecondary: #fff;
+  /* btn colors */
+  --btnPrimary: #fff;
+  --btnHover: #000;
+  --btnDisabled: #fff;
+  /* fonts */
+  --fontPrimary: Arial, Helvetica, sans-serif;
+  --fontWeight: 400;
+  --fontSize: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.fraunces {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-size: 40px;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+
+.barlow {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.full_page {
+  width: 1440px;
+  height: 5416px;
+  display: flex;
+  background: #F4F7FA;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+header {
+  height: 126px;
+  width: 1280px;
+  margin-left: 80px;
+  margin-top: 48px;
+  display: flex;
+}
+
+.header_brand {
+  width: 199px;
+  height: 63px;
+  display: flex;
+}
+
+.header_brand-text {
+  width: 100px;
+  height: 38px;
+  margin-left: 26.1px;
+  margin-top: 13px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3B1D8F;
+}
+
+.header_text {
+  width: 227px;
+  height: 40px;
+  margin-left: 92px;
+  margin-top: 13px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #303030;
+}
+
+.header_number {
+  position: absolute;
+  width: 145px;
+  height: 16px;
+  left: 1064px;
+  top: 74px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: right;
+  color: #303030;
+}
+
+.header_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 10px;
+  position: absolute;
+  width: 115px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 645px;
+  background: #273895;
+  border-radius: 15px;
+  border: 5px;
+  width: 51px;
+  height: 18px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.header_a1 {
+  position: absolute;
+  width: 104px;
+  height: 15px;
+  left: 80px;
+  top: 159px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.header_a2 {
+  position: absolute;
+  width: 61px;
+  height: 15px;
+  left: 232px;
+  top: 159px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  color: #273895;
+}
+
+.header_a3 {
+  position: absolute;
+  width: 47px;
+  height: 15px;
+  left: 341px;
+  top: 159px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.header_a4 {
+  position: absolute;
+  width: 70px;
+  height: 15px;
+  left: 436px;
+  top: 159px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.header_a5 {
+  position: absolute;
+  width: 36px;
+  height: 15px;
+  left: 554px;
+  top: 159px;
+  font-family: 'Gotham Pro,sans-serif';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.header_a6 {
+  position: absolute;
+  width: 84px;
+  height: 15px;
+  left: 638px;
+  top: 159px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+main {
+  display: flex;
+  width: 1440px;
+  height: 5187px;
+  margin-top: 229px;
+  margin-left: -1360px;
+  background: #F4F7FA;
+}
+
+.top_section-texts {
+  width: 733px;
+  height: 341px;
+  position: absolute;
+  left: 80px;
+  top: 294px;
+  font-family: 'Gotham Pro';
+  font-style: normal;
+}
+
+.top_section_text1 {
+  font-family: Gotham Pro, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 55px;
+  text-align: left;
+}
+
+.top_section_text2 {
+  width: 500px;
+  height: 72px;
+  margin-top: 16px;
+  font-family: Gotham Pro, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+.top_section_button {
+  width: Hug (268px)px;
+  height: Hug (56px)px;
+  margin-top: 38px;
+  padding: 16px 32px 16px 32px;
+  gap: 10px;
+  border-radius: 15px;
+  background: #273895;
+  color: #FFFFFF;
+  font-family: Gotham Pro, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  border: 5px;
+}
+
+.top_section-image1 {
+  position: absolute;
+  width: 438px;
+  height: 488px;
+  left: 845px;
+  top: 229px;
+}
+
+.top_section-backgraund-star1 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 991px;
+  top: 234px;
+}
+
+.top_section-backgraund-star2 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 997px;
+  top: 354px;
+}
+
+.top_section-backgraund-star3 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 1144px;
+  top: 354px;
+}
+
+.top_section-backgraund-ball1 {
+  position: absolute;
+  width: 11px;
+  height: 12px;
+  left: 980px;
+  top: 293px;
+}
+
+.top_section-backgraund-ball2 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 1165px;
+  top: 299px;
+}
+
+.top_section-image2 {
+  position: absolute;
+  left: 74.38%;
+  right: 15.56%;
+  top: 163px;
+  bottom: 96.64%;
+  color: linear-gradient(259.91deg, #4614E8 8.56%, #BCA7FF 101.88%);
+}
+
+.top_section-image2-text1 {
+  position: absolute;
+  width: 76px;
+  height: 26px;
+  left: 1103.75px;
+  top: 191.75px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: #303030;
+}
+
+.top_section-image2-text2 {
+  position: absolute;
+  width: 76px;
+  height: 26px;
+  left: 1104.75px;
+  top: 208.75px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: #303030;
+}
+
+.top_section-image2-text3 {
+  position: absolute;
+  width: 94px;
+  height: 28px;
+  left: 1094.75px;
+  top: 233.75px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #303030;
+}
+
+.top_section-information {
+  position: absolute;
+  width: 712px;
+  height: 164px;
+  left: 648px;
+  top: 635px;
+  background: #F4F7FA;
+  box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+  border-radius: 10px;
+}
+
+.top_section-information-image1-1 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 48px;
+  top: 32px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.top_section-information-image1-2 {
+  position: absolute;
+  width: 16.61px;
+  height: 27.47px;
+  left: 74px;
+  top: 30px;
+  color: linear-gradient(180deg, #4614E8 0%, #BCA7FF 100%), #7247FF;
+  border: 0.3px solid #000000, none;
+}
+
+.top_section-information-image2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 229px;
+  top: 32px;
+}
+
+.top_section-information-image3 {
+  position: absolute;
+  width: 53px;
+  height: 40px;
+  left: 485px;
+  top: 32px;
+}
+
+.top_section-information-image1-text {
+  position: absolute;
+  width: 149px;
+  height: 52px;
+  left: 48px;
+  top: 80px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #303030;
+}
+
+.top_section-information-image2-text {
+  position: absolute;
+  width: 224px;
+  height: 52px;
+  left: 229px;
+  top: 80px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #303030;
+}
+
+.top_section-information-image3-text {
+  position: absolute;
+  width: 179px;
+  height: 52px;
+  left: 485px;
+  top: 80px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #303030;
+}
+
+.section2 {
+  position: absolute;
+  width: 947px;
+  height: 301px;
+  top: 943px;
+  left: 191px;
+}
+
+.section2_logo {
+  position: absolute;
+  width: 187px;
+  height: 59px;
+  top: 31px;
+}
+
+.section2_text1 {
+  position: absolute;
+  width: 438px;
+  height: 88px;
+  top: 122px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 44px;
+  text-align: left;
+  color: #303030;
+}
+
+.section2_text2 {
+  position: absolute;
+  width: 406px;
+  height: 81px;
+  top: 226px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.section2_rectangle1_texts {
+  position: absolute;
+  width: 217px;
+  height: 156px;
+  left: 513px;
+  background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
+  box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+  border-radius: 10px;
+}
+
+.section2_rectangle1_text1 {
+  position: absolute;
+  width: 150px;
+  height: 54px;
+  left: 32px;
+  top: 32px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 44px;
+  background: linear-gradient(180deg, #4614E8 0%, #BCA7FF 100%), #7247FF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section2_rectangle1_text2 {
+  position: absolute;
+  width: 32px;
+  height: 24px;
+  left: 140px;
+  top: 51px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(180deg, #4614E8 0%, #BCA7FF 100%), #7247FF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section2_rectangle1_text3 {
+  position: absolute;
+  width: 95px;
+  height: 38px;
+  left: 32px;
+  top: 86px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.section2_rectangle2_texts {
+  position: absolute;
+  width: 179px;
+  height: 135px;
+  left: 755px;
+  top: 21px;
+  background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
+  box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+  border-radius: 10px;
+}
+
+.section2_rectangle2_text1 {
+  position: absolute;
+  width: 58px;
+  height: 32px;
+  left: 24px;
+  top: 24px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  background: linear-gradient(180deg, #4614E8 0%, #BCA7FF 100%), #7247FF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section2_rectangle2_text2 {
+  position: absolute;
+  width: 38px;
+  height: 24px;
+  left: 70px;
+  top: 39px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(180deg, #4614E8 0%, #BCA7FF 100%), #7247FF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section2_rectangle2_text3 {
+  position: absolute;
+  width: 131px;
+  height: 40px;
+  left: 24px;
+  top: 71px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.section2_rectangle3_texts {
+  position: absolute;
+  width: 179px;
+  height: 135px;
+  left: 553px;
+  top: 173px;
+  background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
+  box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+  border-radius: 10px;
+}
+
+.section2_rectangle3_text1 {
+  position: absolute;
+  width: 81px;
+  height: 54px;
+  left: 24px;
+  top: 24px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  background: linear-gradient(180deg, #4614E8 0%, #BCA7FF 100%), #7247FF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section2_rectangle3_text2 {
+  position: absolute;
+  width: 131px;
+  height: 40px;
+  left: 24px;
+  top: 71px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.section2_rectangle4_texts {
+  position: absolute;
+  width: 192px;
+  height: 171px;
+  left: 755px;
+  top: 173px;
+  background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
+  box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+  border-radius: 10px;
+}
+
+.section2_rectangle4_text1 {
+  position: absolute;
+  width: 80px;
+  height: 39px;
+  left: 32px;
+  top: 32px;
+  font-family: 'Artegra Sans Extended Alt', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.17em;
+  background: linear-gradient(180deg, #4614E8 0%, #BCA7FF 100%), #7247FF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section2_rectangle4_text2 {
+  position: absolute;
+  width: 128px;
+  height: 60px;
+  left: 32px;
+  top: 76px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.section2_ball1 {
+  position: absolute;
+  width: 159px;
+  height: 159px;
+  left: 901px;
+  top: -61px;
+  color: linear-gradient(90deg, #E1D8FF 21.57%, #F4ECFF 100%);
+  border-radius: 5px;
+}
+
+.section2_ball2 {
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  left: 532px;
+  top: 161px;
+  color: linear-gradient(90deg, #E1D8FF 21.57%, #F4ECFF 100%);
+  border-radius: 5px;
+}
+
+.section2_ball3 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 742px;
+  top: 203px;
+  color: linear-gradient(90deg, #E1D8FF 21.57%, #F4ECFF 100%);
+  border-radius: 5px;
+}
+
+.help_section {
+  position: absolute;
+  width: 1061px;
+  height: 393px;
+  top: 1329px;
+  left: 189px;
+}
+
+.help_section-text1 {
+  position: absolute;
+  width: 187px;
+  height: 18px;
+  left: 437px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #303030;
+}
+
+.help_section-rectangle1 {
+  position: absolute;
+  width: 343px;
+  height: 344px;
+  top: 49px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.help_section-rectangle1-img {
+  position: absolute;
+  width: 159px;
+  height: 128px;
+  left: 92px;
+  top: 32px;
+  background: url(team.png);
+}
+
+.help_section-rectangle1_text1 {
+  position: absolute;
+  width: 78px;
+  height: 18px;
+  left: 32px;
+  top: 176px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  color: #303030;
+}
+
+.help_section-rectangle1_text2 {
+  position: absolute;
+  width: 279px;
+  height: 102px;
+  left: 32px;
+  top: 210px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.help_section-rectangle2 {
+  position: absolute;
+  width: 343px;
+  height: 344px;
+  top: 49px;
+  left: 359px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.help_section-rectangle2-img {
+  position: absolute;
+  width: 166.88px;
+  height: 129px;
+  left: 90px;
+  top: 32px;
+  background: url(3.png);
+}
+
+.help_section-rectangle2_text1 {
+  position: absolute;
+  width: 160px;
+  height: 18px;
+  left: 32px;
+  top: 177px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  color: #303030;
+}
+
+.help_section-rectangle2_text2 {
+  position: absolute;
+  width: 280px;
+  height: 101px;
+  left: 32px;
+  top: 211px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.help_section-rectangle3 {
+  position: absolute;
+  width: 343px;
+  height: 344px;
+  top: 49px;
+  left: 718px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.help_section-rectangle3-img {
+  position: absolute;
+  width: 161.35px;
+  height: 128px;
+  left: 91px;
+  top: 32px;
+  background: url(family.png);
+}
+
+.help_section-rectangle3_text1 {
+  position: absolute;
+  width: 180px;
+  height: 18px;
+  left: 32px;
+  top: 177px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  color: #303030;
+}
+
+.help_section-rectangle3_text2 {
+  position: absolute;
+  width: 279px;
+  height: 102px;
+  left: 32px;
+  top: 211px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.service_section {
+  position: absolute;
+  height: 754px;
+  width: 1255px;
+  top: 1866px;
+  left: 80px;
+}
+
+.service_section-text1 {
+  position: absolute;
+  width: 438px;
+  height: 44px;
+  left: 403px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #303030;
+}
+
+.service_section-button {
+  position: absolute;
+  width: 187px;
+  height: 105.83px;
+  left: 187px;
+  top: 62px;
+  background-color: linear-gradient(326.06deg, #F0EBFF 11.53%, #FFFFFF 74.32%);
+  box-shadow: 0px 13.5277px 39.7872px rgba(187, 166, 255, 0.78);
+  border-radius: 11.9362px;
+  background: #FFFFFF;
+}
+
+.service_section-button-text {
+  position: absolute;
+  width: 140px;
+  height: 16px;
+  left: 23px;
+  top: 19px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.service_section-btn {
+  position: absolute;
+  width: 102px;
+  height: 15px;
+  left: 19.89px;
+  top: 41px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  width: 148.01px;
+  height: 46.15px;
+  background: linear-gradient(326.06deg, #2641D1 11.53%, #3333A3 74.32%);
+  border-radius: 7.95745px;
+  border: 5px;
+}
+
+.service_section-back-image {
+  position: absolute;
+  width: 219px;
+  height: 410px;
+  left: 109px;
+  top: 76px;
+}
+
+.service_section-img {
+  position: absolute;
+  width: 188px;
+  height: 382px;
+  left: 122px;
+  top: 97px;
+  background: #34449C;
+  border-radius: 15px;
+  background-image: url(..//media/Rectangle\ 8.png);
+}
+
+.service_section .service_section-image {
+  position: absolute;
+  width: 171px;
+  height: 166px;
+  left: 9px;
+  top: 79px;
+  background: url(sirius6.png);
+}
+
+.service_section-img-text {
+  position: absolute;
+  width: 69px;
+  height: 46px;
+  left: 62px;
+  top: 254px;
+  font-family: 'Artegra Sans Extended Alt', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.17em;
+  color: #FFFFFF;
+}
+
+.service_section-text2 {
+  position: absolute;
+  width: 80px;
+  height: 39px;
+  left: 405px;
+  top: 92px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 750;
+  font-size: 19px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.17em;
+  color: #34449C;
+}
+
+.service_section-text1-rectangle {
+  position: absolute;
+  width: 438px;
+  height: 214px;
+  left: 405px;
+  top: 139px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.service_section-text2-rectangle {
+  position: absolute;
+  width: 300px;
+  height: 188px;
+  top: 139px;
+  left: 901px;
+}
+
+.service_section-text2-rectangle-t1 {
+  position: absolute;
+  width: 300px;
+  height: 19px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.service_section-text2-rectangle-t2 {
+  position: absolute;
+  width: 300px;
+  height: 19px;
+  top: 43px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.service_section-text2-rectangle-t3 {
+  position: absolute;
+  width: 300px;
+  height: 19px;
+  top: 90px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.service_section-text2-rectangle-t4 {
+  position: absolute;
+  width: 300px;
+  height: 19px;
+  top: 149px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.service_section-rectangles {
+  position: absolute;
+  width: 1257px;
+  height: 342px;
+  top: 413px;
+}
+
+.service_section-rectangle1 {
+  position: absolute;
+  width: 236px;
+  height: 342px;
+  background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
+  box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+  border-radius: 20px;
+}
+
+.service_section-rectangle1-img {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  left: 32px;
+  top: 36px;
+}
+
+.service_section-rectangle1-t1 {
+  position: absolute;
+  width: 81px;
+  height: 40px;
+  left: 32px;
+  top: 110px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #404040;
+}
+
+.service_section-rectangle1-t2 {
+  position: absolute;
+  width: 172px;
+  height: 144px;
+  left: 32px;
+  top: 166px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.service_section-rectangle2 {
+  position: absolute;
+  width: 236px;
+  height: 342px;
+  left: 255px;
+  background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
+  box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+  border-radius: 20px;
+}
+
+.service_section-rectangle2-img {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  left: 32px;
+  top: 36px;
+}
+
+.service_section-rectangle2-t1 {
+  position: absolute;
+  width: 94px;
+  height: 40px;
+  left: 32px;
+  top: 110px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #404040;
+}
+
+.service_section-rectangle2-t2 {
+  position: absolute;
+  width: 172px;
+  height: 144px;
+  left: 32px;
+  top: 166px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.service_section-rectangle3 {
+  position: absolute;
+  width: 236px;
+  height: 342px;
+  left: 510px;
+  background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
+  box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+  border-radius: 20px;
+}
+
+.service_section-rectangle3-img {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  left: 32px;
+  top: 36px;
+}
+
+.service_section-rectangle3-t1 {
+  position: absolute;
+  width: 106px;
+  height: 40px;
+  left: 32px;
+  top: 110px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #404040;
+}
+
+.service_section-rectangle3-t2 {
+  position: absolute;
+  width: 172px;
+  height: 144px;
+  left: 32px;
+  top: 166px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.service_section-rectangle4 {
+  position: absolute;
+  width: 236px;
+  height: 342px;
+  left: 765px;
+  background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
+  box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+  border-radius: 20px;
+}
+
+.service_section-rectangle4-img {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  left: 32px;
+  top: 36px;
+}
+
+.service_section-rectangle4-t1 {
+  position: absolute;
+  width: 113px;
+  height: 40px;
+  left: 32px;
+  top: 110px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #404040;
+}
+
+.service_section-rectangle4-t2 {
+  position: absolute;
+  width: 172px;
+  height: 144px;
+  left: 32px;
+  top: 166px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.service_section-rectangle5 {
+  position: absolute;
+  width: 236px;
+  height: 342px;
+  left: 1020px;
+  background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
+  box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+  border-radius: 20px;
+}
+
+.service_section-rectangle5-img {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  left: 32px;
+  top: 36px;
+}
+
+.service_section-rectangle5-t1 {
+  position: absolute;
+  width: 172px;
+  height: 60px;
+  left: 32px;
+  top: 110px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #404040;
+}
+
+.service_section-rectangle5-t2 {
+  position: absolute;
+  width: 172px;
+  height: 129px;
+  left: 32px;
+  top: 180px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #404040;
+}
+
+.tarif_text {
+  position: absolute;
+  width: 438px;
+  height: 37px;
+  left: 501px;
+  top: 2813px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #303030;
+}
+
+.tarif_text2 {
+  position: absolute;
+  width: 210px;
+  height: 16px;
+  left: 615px;
+  top: 2866px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #404040;
+}
+
+.tarif_button {
+  position: absolute;
+  width: 133px;
+  height: 50px;
+  left: 571px;
+  top: 2914px;
+  background: #273895;
+  border-radius: 15px;
+  position: absolute;
+  left: 599px;
+  top: 2924px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  border: 5px;
+}
+
+.tarif_button-text {
+  position: absolute;
+  width: 38px;
+  height: 30px;
+  left: 768px;
+  top: 2935px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #273895;
+  border: 1px dashed #2741CF;
+}
+
+.tarif_section {
+  position: absolute;
+  width: 1062px;
+  height: 495px;
+  left: 189px;
+  top: 2996px;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+.tarif_section-t1 {
+  position: absolute;
+  width: 251px;
+  height: 26px;
+  left: 405px;
+  top: 48px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 750;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #2741D0;
+}
+
+.tarif_section-t2 {
+  position: absolute;
+  width: 251px;
+  height: 36px;
+  left: 405px;
+  top: 82px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #C9C9C9;
+}
+
+.tarif_section-t3 {
+  position: absolute;
+  width: 446.82px;
+  height: 30px;
+  left: 307.13px;
+  top: 134px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #737373;
+}
+
+.tarif_section-t4 {
+  position: absolute;
+  width: 250px;
+  height: 26px;
+  left: 406px;
+  top: 180px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #404040;
+}
+
+.tarif_section-t5 {
+  position: absolute;
+  width: 225px;
+  height: 33px;
+  left: 237px;
+  top: 222px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #404040;
+}
+
+.tarif_section-t6 {
+  position: absolute;
+  width: 87px;
+  height: 33px;
+  left: 569px;
+  top: 222px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #404040;
+}
+
+.tarif_section-t7 {
+  position: absolute;
+  width: 286px;
+  height: 29px;
+  left: 237px;
+  top: 263px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #404040;
+}
+
+.tarif_section-t8 {
+  position: absolute;
+  width: 306px;
+  height: 48px;
+  left: 569px;
+  top: 271px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #404040;
+}
+
+.tarif_section-t9 {
+  position: absolute;
+  width: 295px;
+  height: 40px;
+  left: 386px;
+  top: 350px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+  color: #2741D0;
+}
+
+.tarif_section-button {
+  position: absolute;
+  width: 220px;
+  height: 56px;
+  left: 421px;
+  top: 391px;
+  background: #273895;
+  position: absolute;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 5px;
+}
+
+.tarif-information_section {
+  position: absolute;
+  width: 1060px;
+  height: 1351px;
+  left: 191px;
+  top: 3523px;
+}
+
+.tarif-information_section-rectangle1 {
+  position: absolute;
+  width: 513px;
+  height: 647px;
+}
+
+.tarif-information_section-rectangle1-t1 {
+  position: absolute;
+  width: 148px;
+  height: 27px;
+  left: 48px;
+  top: 48px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #2741D0;
+}
+
+.tarif-information_section-rectangle1-t2 {
+  position: absolute;
+  width: 150px;
+  height: 26px;
+  left: 48px;
+  top: 91px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #737373;
+}
+
+.tarif-information_section-rectangle1-t3 {
+  position: absolute;
+  width: 150px;
+  height: 26px;
+  left: 48px;
+  top: 133px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 30px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle1-t4 {
+  position: absolute;
+  width: 150px;
+  height: 24px;
+  left: 48px;
+  top: 175px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle1-t5 {
+  position: absolute;
+  width: 399px;
+  height: 48px;
+  left: 48px;
+  top: 215px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle1-t6 {
+  position: absolute;
+  width: 399px;
+  height: 48px;
+  top: 279px;
+  left: 48px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle1-t7 {
+  position: absolute;
+  width: 399px;
+  height: 24px;
+  left: 48px;
+  top: 343px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle1-t8 {
+  position: absolute;
+  width: 399px;
+  height: 24px;
+  left: 48px;
+  top: 383px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle1-t9 {
+  position: absolute;
+  width: 399px;
+  height: 48px;
+  left: 48px;
+  top: 423px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle1-t10 {
+  position: absolute;
+  width: 289.8px;
+  height: 40px;
+  top: 487px;
+  left: 48px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+  color: #2741D0;
+}
+
+.tarif-information_section-rectangle1-button {
+  position: absolute;
+  width: 220px;
+  height: 56px;
+  left: 48px;
+  top: 543px;
+  background: #273895;
+  position: absolute;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 5px;
+}
+
+.tarif-information_section-rectangle2 {
+  position: absolute;
+  width: 513px;
+  height: 647px;
+  left: 547px;
+}
+
+.tarif-information_section-rectangle2-t1 {
+  position: absolute;
+  width: 344px;
+  height: 27px;
+  left: 48px;
+  top: 48px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #2741D0;
+}
+
+.tarif-information_section-rectangle2-t2 {
+  position: absolute;
+  width: 267px;
+  height: 26px;
+  left: 48px;
+  top: 91px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #737373;
+}
+
+.tarif-information_section-rectangle2-t3 {
+  position: absolute;
+  width: 150px;
+  height: 26px;
+  left: 48px;
+  top: 133px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 30px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle2-t4 {
+  position: absolute;
+  width: 150px;
+  height: 24px;
+  left: 48px;
+  top: 175px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle2-t5 {
+  position: absolute;
+  width: 399px;
+  height: 48px;
+  left: 48px;
+  top: 215px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle2-t6 {
+  position: absolute;
+  width: 399px;
+  height: 48px;
+  top: 279px;
+  left: 48px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle2-t7 {
+  position: absolute;
+  width: 399px;
+  height: 24px;
+  left: 48px;
+  top: 343px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle2-t8 {
+  position: absolute;
+  width: 399px;
+  height: 24px;
+  left: 48px;
+  top: 383px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle2-t9 {
+  position: absolute;
+  width: 399px;
+  height: 48px;
+  left: 48px;
+  top: 423px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle2-t10 {
+  position: absolute;
+  width: 289.8px;
+  height: 40px;
+  top: 487px;
+  left: 48px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+  color: #2741D0;
+}
+
+.tarif-information_section-rectangle2-button {
+  position: absolute;
+  width: 220px;
+  height: 56px;
+  left: 48px;
+  top: 543px;
+  background: #273895;
+  position: absolute;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 5px;
+}
+
+.tarif-information_section-rectangle3 {
+  position: absolute;
+  width: 513px;
+  height: 647px;
+  top: 679px;
+}
+
+.tarif-information_section-rectangle3-t1 {
+  position: absolute;
+  width: 278px;
+  height: 27px;
+  left: 48px;
+  top: 48px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #2741D0;
+}
+
+.tarif-information_section-rectangle3-t2 {
+  position: absolute;
+  width: 246px;
+  height: 26px;
+  left: 48px;
+  top: 91px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #737373;
+}
+
+.tarif-information_section-rectangle3-t3 {
+  position: absolute;
+  width: 150px;
+  height: 26px;
+  left: 48px;
+  top: 133px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 30px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle3-t4 {
+  position: absolute;
+  width: 150px;
+  height: 24px;
+  left: 48px;
+  top: 175px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle3-t5 {
+  position: absolute;
+  width: 399px;
+  height: 48px;
+  left: 48px;
+  top: 215px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle3-t6 {
+  position: absolute;
+  width: 399px;
+  height: 48px;
+  top: 279px;
+  left: 48px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle3-t7 {
+  position: absolute;
+  width: 399px;
+  height: 24px;
+  left: 48px;
+  top: 343px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle3-t8 {
+  position: absolute;
+  width: 399px;
+  height: 24px;
+  left: 48px;
+  top: 383px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle3-t9 {
+  position: absolute;
+  width: 399px;
+  height: 48px;
+  left: 48px;
+  top: 423px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle3-t10 {
+  position: absolute;
+  width: 289.8px;
+  height: 40px;
+  top: 487px;
+  left: 48px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+  color: #2741D0;
+}
+
+.tarif-information_section-rectangle3-button {
+  position: absolute;
+  width: 220px;
+  height: 56px;
+  left: 48px;
+  top: 543px;
+  background: #273895;
+  position: absolute;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 5px;
+}
+
+.tarif-information_section-rectangle4 {
+  position: absolute;
+  width: 513px;
+  height: 647px;
+  left: 547px;
+  top: 679px;
+}
+
+.tarif-information_section-rectangle4-t1 {
+  position: absolute;
+  width: 344px;
+  height: 27px;
+  left: 48px;
+  top: 48px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #2741D0;
+}
+
+.tarif-information_section-rectangle4-t2 {
+  position: absolute;
+  width: 267px;
+  height: 26px;
+  left: 48px;
+  top: 91px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #737373;
+}
+
+.tarif-information_section-rectangle4-t3 {
+  position: absolute;
+  width: 150px;
+  height: 26px;
+  left: 48px;
+  top: 133px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 30px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle4-t4 {
+  position: absolute;
+  width: 150px;
+  height: 24px;
+  left: 48px;
+  top: 175px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle4-t5 {
+  position: absolute;
+  width: 399px;
+  height: 48px;
+  left: 48px;
+  top: 215px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle4-t6 {
+  position: absolute;
+  width: 399px;
+  height: 48px;
+  top: 279px;
+  left: 48px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle4-t7 {
+  position: absolute;
+  width: 399px;
+  height: 24px;
+  left: 48px;
+  top: 343px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle4-t8 {
+  position: absolute;
+  width: 399px;
+  height: 24px;
+  left: 48px;
+  top: 383px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle4-t9 {
+  position: absolute;
+  width: 399px;
+  height: 48px;
+  left: 48px;
+  top: 423px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.tarif-information_section-rectangle4-t10 {
+  position: absolute;
+  width: 289.8px;
+  height: 40px;
+  top: 487px;
+  left: 48px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+  color: #2741D0;
+}
+
+.tarif-information_section-rectangle4-button {
+  position: absolute;
+  width: 220px;
+  height: 56px;
+  left: 48px;
+  top: 543px;
+  background: #273895;
+  position: absolute;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 5px;
+}
+
+.last_section {
+  position: absolute;
+  width: 1440px;
+  height: 398px;
+  top: 5018px;
+  background: #273895;
+}
+
+.last_section-backraund-img {
+  position: absolute;
+  width: 1173px;
+  height: 672px;
+  left: 267px;
+}
+
+.last_section-backraund-img2 {
+  position: absolute;
+  width: 405px;
+  height: 391px;
+  top: 35px;
+  left: 196px;
+}
+
+.last_section-text1 {
+  position: absolute;
+  width: 398px;
+  height: 41px;
+  left: 196px;
+  top: 88px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+.last_section-text2 {
+  position: absolute;
+  width: 321px;
+  height: 48px;
+  left: 196px;
+  top: 145px;
+  font-family: 'Gotham Pro', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #E9E9E9;
+}
